@@ -7,9 +7,9 @@ int main()
 {
     char c, s[20], Str[100];      //takeing two strings s,for single Str for multiple string
     scanf("%c", &c); 
-    scanf("%s", s);
+    scanf("%s", &s);
     scanf("\n");
-    scanf("%[^\n]%*c", Str);
+    scanf("%[^\n]%*c", &Str);
     printf("%c\n", c);
     printf("%s\n", s);
     printf("%s\n", Str);
