@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	int *ptr=NULL,i,r,len;
+
+	scanf("%d %d", &len,&r);              		
+	ptr=(int*)malloc(len*sizeof(int));
+	for(i=1;i<=len;i++){
+		scanf("%d",&ptr[i]);
+	}
+	int S;
+	S=len-r;
+	int temp[r];
+	
+	for(i=1;i<=r;i++){
+	    temp[i]=ptr[S+i];
+	}
+    
+    for(i=1;i<=r;i++)
+		printf("%d ",temp[i]);
+		
+    
+   	for(i=1;i<=S;i++){
+		printf("%d ",ptr[i]);
+	}
+	
+		
+	return 0;
+
+}
